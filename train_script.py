@@ -8,4 +8,4 @@ import tensorflow as tf
 
 print("Run train.py")
 
-!python /kaggle/working/crossview_localisation/src/CVM-Net/train.py
+os.system('!python /kaggle/working/crossview_localisation/src/CVM-Net/train.py')
