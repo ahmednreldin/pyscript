@@ -13,7 +13,7 @@ print("Download CVM-NET Model")
 os.system('gdown --id  1JtXz4q0kONNoEFE9tEfSCxLRuuJUWqIF # CVM-NET Model') 
 os.system('unzip CVM-Net_model.zip')
 
-print("change directory to $wroking_path")
+print(f"change directory to {wroking_path}")
 os.chdir(working_path)
 print("Clone Cross-View Repo")
 os.system('git clone https://github.com/ahmednreldin/crossview_localisation # clone repo')
