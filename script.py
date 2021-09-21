@@ -4,10 +4,10 @@ import os
 root_path = '/kaggle' 
 working_path = '/kaggle/working'
 
-!echo "Change directory to /kaggle"
+print( "Change directory to /kaggle")
 os.chdir(root_path)
 
-!echo "install gdown package" 
+print( "install gdown package") 
 ! conda install -y gdown ; 
 
 !gdown --id  1JtXz4q0kONNoEFE9tEfSCxLRuuJUWqIF # CVM-NET Model ; 
