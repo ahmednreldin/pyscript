@@ -1,4 +1,5 @@
 
+import os
 
 # Run Tran.py
 os.system('pip install tensorflow==1.13.2') # install suitable version for TF
