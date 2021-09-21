@@ -1,10 +1,12 @@
 
 import os
 
-# Run Tran.py
-print("install TF 1.13.2")
-os.system('pip install tensorflow==1.13.2') # install suitable version for TF
-import tensorflow as tf
+# Run train script 
+print('Run train script ' )
+
+# install slim package 
+print('install slim package ')
+os.system('pip install --upgrade tf_slim')
 
 print("Run train.py")
 
