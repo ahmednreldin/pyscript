@@ -16,7 +16,7 @@ os.system('unzip CVM-Net_model.zip')
 os.chdir(working_path)
 
 os.system('git clone https://github.com/ahmednreldin/crossview_localisation # clone repo')
-os.system('mv '/kaggle/CVM-Net_model/CVM-NET-I/CVM-Net-I_init/' '/kaggle/working/crossview_localisation/src/Model/CVM-NET-I'')
+os.system('mv /kaggle/CVM-Net_model/CVM-NET-I/CVM-Net-I_init/ /kaggle/working/crossview_localisation/src/Model/CVM-NET-I')
 #rename model init to 0 
 os.system('mv /kaggle/crossview_localisation/src/Model/CVM-NET-I/CVM-Net-I_init /kaggle/crossview_localisation/src/Model/CVM-NET-I/0')
 os.system('cp -r  /kaggle/input/cvusa-localization /kaggle/working')
