@@ -1,4 +1,4 @@
-cd .. ;
+!cd .. ;
 ! conda install -y gdown ; 
 !gdown --id  1JtXz4q0kONNoEFE9tEfSCxLRuuJUWqIF # CVM-NET Model ; 
 !unzip CVM-Net_model.zip
