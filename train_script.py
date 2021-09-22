@@ -10,4 +10,4 @@ os.system('pip install --upgrade tf_slim')
 
 print("Run train.py")
 
-os.system('!python /kaggle/working/crossview_localisation/src/CVM-Net/train.py')
+os.system('python /kaggle/working/crossview_localisation/src/CVM-Net/train.py')
