@@ -17,9 +17,14 @@ print(f"change directory to {working_path}")
 os.chdir(working_path)
 print("Clone Cross-View Repo")
 os.system('git clone https://github.com/ahmednreldin/crossview_localisation # clone repo')
+print("Copy Init Model to location")
 os.system('mv /kaggle/CVM-Net_model/CVM-NET-I/CVM-Net-I_init/ /kaggle/working/crossview_localisation/src/Model/CVM-NET-I')
 #rename model init to 0 
 os.system('mv /kaggle/working/crossview_localisation/src/Model/CVM-NET-I/CVM-Net-I_init /kaggle/working/crossview_localisation/src/Model/CVM-NET-I/0')
+
+print('Copy Pre-trained model to location ')
+os.system('mv /kaggle/CVM-Net_model/CVM-NET-I/CVM-Net-I_model/* /kaggle/working/crossview_localisation/src/Model/CVM-NET-I/test_model/')
+
 
 # Datasets
 print("Copy dataset from input to working directory..")
@@ -30,4 +35,11 @@ os.system('mv /kaggle/working/cvusa-localization/splits/splits/* /kaggle/working
 os.system('mv /kaggle/working/cvusa-localization/bingmap/bingmap/* /kaggle/working/cvusa-localization/bingmap/')
 os.system('mv /kaggle/working/cvusa-localization/split_locations/* /kaggle/working/cvusa-localization/')
 os.system('mv /kaggle/working/cvusa-localization/streetview/streetview/* /kaggle/working/cvusa-localization/streetview/')
+
+Print("Install Necessary Packages " )
+
+print('install slim package ')
+os.system('pip install --upgrade tf_slim') 
+
+
 
