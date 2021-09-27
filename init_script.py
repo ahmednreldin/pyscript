@@ -36,7 +36,7 @@ os.system('mv /kaggle/working/cvusa-localization/bingmap/bingmap/* /kaggle/worki
 os.system('mv /kaggle/working/cvusa-localization/split_locations/* /kaggle/working/cvusa-localization/')
 os.system('mv /kaggle/working/cvusa-localization/streetview/streetview/* /kaggle/working/cvusa-localization/streetview/')
 
-Print("Install Necessary Packages " )
+print("Install Necessary Packages " )
 
 print('install slim package ')
 os.system('pip install --upgrade tf_slim') 
