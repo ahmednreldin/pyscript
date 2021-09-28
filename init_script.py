@@ -28,12 +28,12 @@ os.system('mv /kaggle/CVM-Net_model/CVM-NET-I/CVM-Net-I_model/* /kaggle/working/
 
 
 
-print("Copy Init CVM-NET II Model to location")
-os.system('mv /kaggle/CVM-Net_model/CVM-NET-II/CVM-Net-II_init/ /kaggle/working/crossview_localisation/src/Model/CVM-NET-II')
+#print("Copy Init CVM-NET II Model to location")
+#os.system('mv /kaggle/CVM-Net_model/CVM-NET-II/CVM-Net-II_init/ /kaggle/working/crossview_localisation/src/Model/CVM-NET-II')
 #rename model init to 0 
-os.system('mv /kaggle/working/crossview_localisation/src/Model/CVM-NET-II/CVM-Net-II_init /kaggle/working/crossview_localisation/src/Model/CVM-NET-II/0')
-print('Copy Pre-trained CVM-NET II model to location ')
-os.system('mv /kaggle/CVM-Net_model/CVM-NET-II/CVM-Net-II_model/* /kaggle/working/crossview_localisation/src/Model/CVM-NET-II/test_model/')
+#os.system('mv /kaggle/working/crossview_localisation/src/Model/CVM-NET-II/CVM-Net-II_init /kaggle/working/crossview_localisation/src/Model/CVM-NET-II/0')
+#print('Copy Pre-trained CVM-NET II model to location ')
+#os.system('mv /kaggle/CVM-Net_model/CVM-NET-II/CVM-Net-II_model/* /kaggle/working/crossview_localisation/src/Model/CVM-NET-II/test_model/')
 
 # Datasets
 print("Copy dataset from input to working directory..")
