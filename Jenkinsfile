@@ -11,5 +11,15 @@ pipeline{
                 echo "Build stage from Dev Branch"
             }
         }
+        stage("Deployment"){
+            when{
+                expression{
+                    BRANCH_NAME == "Master"
+                }
+            steps{
+                echo "Deployment of the application"
+            }
+            }
+        }
     }
 }
