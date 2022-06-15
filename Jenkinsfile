@@ -7,7 +7,7 @@ pipeline{
                     BRANCH_NAME == "Dev"
                 }
             }
-            step{
+            steps{
                 echo "Build stage from Dev Branch"
             }
         }
