@@ -4,11 +4,11 @@ pipeline{
         stage("Build"){
             when{
                 expression{
-                    BRANCH_NAME == "Div"
+                    BRANCH_NAME == "Dev"
                 }
             }
             step{
-                echo "Build stage from Div Branch"
+                echo "Build stage from Dev Branch"
             }
         }
     }
