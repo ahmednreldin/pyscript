@@ -11,7 +11,7 @@ pipeline{
                 }
             }
             steps{
-                echo "Build stage from Dev Branch ${CREDENTIAL}"
+                echo "Build stage from Dev Branch $CREDENTIAL_USR and $CREDENTIAL_PSW"
             }
         }
         stage("Deployment"){
