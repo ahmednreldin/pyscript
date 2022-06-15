@@ -1,16 +1,15 @@
-pipeline {
-    agent any
+pipeline{
+    agent any 
     stages{
-        stage("Initialization"){
-            steps{
-                echo "Initialization stage"
-            }
-        }
         stage("Build"){
-            steps{
-                echo "Build stage"
+            when{
+                expression{
+                    BRANCH_NAME == "Div"
+                }
+            }
+            step{
+                echo "Build stage from Div Branch"
             }
         }
     }
-
 }
