@@ -1,5 +1,8 @@
 pipeline{
     agent any 
+    environment{
+        CREDENTIAL = credential('TEST')
+    }
     stages{
         stage("Build"){
             when{
@@ -8,7 +11,7 @@ pipeline{
                 }
             }
             steps{
-                echo "Build stage from Dev Branch"
+                echo "Build stage from Dev Branch ${CREDENTIAL}"
             }
         }
         stage("Deployment"){
