@@ -16,9 +16,9 @@ pipeline{
                 expression{
                     BRANCH_NAME == "Master"
                 }
+            }
             steps{
                 echo "Deployment of the application"
-            }
             }
         }
     }
